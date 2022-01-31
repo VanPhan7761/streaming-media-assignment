@@ -55,20 +55,6 @@ const loadFile = (request, response, filePath, fileType) => {
   });
 };
 
-function returnStream(file, start, end){
-    const stream = fs.createReadStream(file, { start, end });
-
-    stream.on('open', () => {
-      stream.pipe(response);
-    });
-
-    stream.on('error', (streamErr) => {
-      response.end(streamErr);
-    });
-
-    return stream;
-}
-
 const getParty = (request, response) => {
     loadFile(request, response, '../client/party.mp4','video/mp4');
 };
