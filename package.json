@@ -1,0 +1,22 @@
+{
+  "name": "streaming_media_homework",
+  "version": "1.0.0",
+  "engines": {
+    "node": "17.3.1",
+    "npm": "8.3.0"
+  },
+  "description": "Streaming media homework",
+  "main": "index.js",
+  "scripts": {
+    "start":"node ./src/server.js",
+    "pretest":"eslint ./src --fix",
+    "test": "echo \"Tests complete\""
+  },
+  "author": "Van Phan",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "eslint": "^8.7.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.25.4"
+  }
+}
